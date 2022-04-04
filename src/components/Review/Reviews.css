@@ -1,0 +1,28 @@
+.user {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    padding: 20px 30px;
+    margin: 20px 20px;
+    width: 50%;
+    margin: 20px auto;
+
+}
+
+.user .profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #9696ec;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .user {
+        width: 100%;
+    }
+}

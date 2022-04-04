@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from '../../images/as.jpg'
+import Review from '../Review/Review';
+import useComment from '../UsetsComment/UserComment';
+
 import './Home.css'
 
 const Home = () => {
+    const [comments, setComments] = useComment();
+
     return (
         <>
             <div className='product-container'>
@@ -23,9 +28,11 @@ const Home = () => {
                 </div>
             </div>
             <div className="customer-review">
-                <h1 className='review-title'>Customer Reviews(3)</h1>
+                <h1 className='review-title'>Customer Reviews (3)</h1>
                 <div>
-
+                    {
+                        comments.map(comment => <Review key={comment.id} comment={comment}></Review>)
+                    }
                 </div>
                 <button>See All Reviews</button>
             </div>

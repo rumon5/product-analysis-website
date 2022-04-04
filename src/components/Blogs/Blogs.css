@@ -1,0 +1,11 @@
+.blog {
+    background-color: #f1f1f1;
+    padding: 20px 30px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.blog h2 {
+    font-size: large;
+}

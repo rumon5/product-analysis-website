@@ -1,0 +1,27 @@
+.area-chart {
+    margin: 0 auto;
+}
+
+.bar-chart {
+    margin: 20px auto;
+}
+
+.chart-title {
+    text-align: center;
+    display: block;
+}
+
+.invest {
+    color: #44ff00;
+    font-size: 30px;
+}
+
+.vs {
+    color: red;
+    font-size: 30px;
+}
+
+.revenue {
+    color: #15ff00;
+    font-size: 30px;
+}

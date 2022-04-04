@@ -1,6 +1,6 @@
 # SUPER SHOP BD 
 
-[Live site](http://www.google.fr/ "SUPER SHOP BD") and http://www.google.fr/
+[Live site](https://tangerine-chimera-463d0f.netlify.app/ "SUPER SHOP BD") and https://tangerine-chimera-463d0f.netlify.app/
 
 
 ### On this website, You can see 

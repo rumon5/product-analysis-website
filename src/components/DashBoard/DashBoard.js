@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const DashBoard = () => {
-    return (
-        <div>
+    const [chartData, setChartData] = useState([]);
 
-        </div>
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setChartData(data))
+    }, [])
+
+    return (
+
+        <LineChart width={600} height={400} data={chartData}>
+            <Line dataKey={'sell'}></Line>
+            <XAxis dataKey={'month'}></XAxis>
+            <Tooltip></Tooltip>
+            <YAxis></YAxis>
+
+        </LineChart>
+
     );
 };
 

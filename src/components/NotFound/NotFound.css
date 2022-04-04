@@ -1,0 +1,10 @@
+.not-found-cont img {
+    max-width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.not-found-cont {
+    background-color: #f0f0f0;
+}

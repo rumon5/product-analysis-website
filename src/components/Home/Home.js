@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Image from '../../images/as.jpg'
-import Review from '../Review/Review';
-import useComment from '../UsetsComment/UserComment';
-
+import Review from '../Review/Reviews';
+import useComment from '../UserComment/UserComment';
 import './Home.css'
+
 
 const Home = () => {
     const [comments, setComments] = useComment();
+    const navigate = useNavigate();
 
     return (
         <>
@@ -30,11 +32,11 @@ const Home = () => {
             <div className="customer-review">
                 <h1 className='review-title'>Customer Reviews (3)</h1>
                 <div>
-                    {
-                        comments.map(comment => <Review key={comment.id} comment={comment}></Review>)
-                    }
+
+                    <Review comments={comments}></Review>)
+
                 </div>
-                <button>See All Reviews</button>
+                <button onClick={() => navigate('/reviews')} >See All Reviews</button>
             </div>
         </>
     );

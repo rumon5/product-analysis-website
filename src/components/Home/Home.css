@@ -36,21 +36,30 @@ h3 {
 }
 
 .customer-review button {
-    width: 350px;
-    margin: 50px auto;
+    width: 500px;
+    margin: 20px auto;
     display: block;
-    padding: 25px 100px;
+    padding: 20px 100px;
     border-radius: 10px;
     color: #ffffff;
     font-weight: bolder;
     border: none;
     background-color: darkblue;
+    cursor: pointer;
 }
 
 .review-title {
     text-align: center;
 }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .customer-review button {
+        width: 100%;
+    }
+}
 
 /* Extra small devices (phones, 950px and down) */
 @media only screen and (max-width: 950px) {
